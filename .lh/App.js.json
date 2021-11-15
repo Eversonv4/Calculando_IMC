@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1637003118146,
@@ -12,6 +12,46 @@
                 {
                     "date": 1637003129035,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n   return (\n-    <SafeAreaView>\n+    <SafeAreaView style={{ marginTop: 20 }}>\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n"
+                },
+                {
+                    "date": 1637011864642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,87 @@\n import React, { useState } from 'react';\n-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput } from 'react-native';\n+import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\n+import Peso from './componentes/Peso';\n+import Altura from './componentes/Altura';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n+  const calcImc = () => {\n+    if (peso == 0 || !peso) {\n+      alert(\"Informe o peso\");\n+      return\n+    }\n+    if (altura == 0 || !altura) {\n+      alert(\"Informe a altura\");\n+      return\n+    }\n+    const r = peso / (Math.pow(altura, 2));\n+    setResultado(r.toFixed(1))\n+  }\n+\n   return (\n-    <SafeAreaView style={{ marginTop: 20 }}>\n-      <Text>Calculadora de IMC</Text>\n-      <View>\n-        <Text>Informe seu peso:</Text>\n-        <TextInput\n-          autoFocus={true}\n-          keyboardType={'numeric'}\n-          onChangeText={text => setPeso(text)}\n+    <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n+      <View style={styles.bloco}>\n+        <Text>Calculadora de IMC</Text>\n+      </View>\n+\n+      <Peso aoModificar={setPeso} />\n+\n+      <ALtura aoModificar={setAltura} />\n+      \n+      <View style={styles.bloco}>\n+        <TouchableHighlight\n+          style={styles.btnCalc}\n+          onPress={() => calcImc()}\n         >\n-        </TextInput>\n+          <Text style={styles.txtBtn}>Calcular IMC</Text>\n+        </TouchableHighlight>\n       </View>\n-    </SafeAreaView>\n+      <View style={styles.bloco}>\n+        <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n+      </View>\n+      <View style={styles.bloco}>\n+        <Image\n+          style={styles.image}\n+          source={require('./assets/image/imc.jpg')}\n+        />\n+      </View>\n+    </SafeAreaView >\n   );\n }\n \n const styles = StyleSheet.create({\n-\n+  corpo: {\n+    padding: 10,\n+  },\n+  bloco: {\n+    marginBottom: 20,\n+  },\n+  txt: {\n+    width: '100%',\n+    borderWidth: 1,\n+    borderColor: '#000',\n+    padding: 10,\n+    borderRadius: 10,\n+  },\n+  btnCalc: {\n+    backgroundColor: '#048',\n+    justifyContent: 'center',\n+    alignItems: 'center',\n+    padding: 10,\n+    borderRadius: 10,\n+  },\n+  txtBtn: {\n+    fontSize: 15,\n+    textTransform: 'uppercase',\n+    color: '#fff',\n+  },\n+  image: {\n+    width: '100%',\n+    height: 300,\n+    resizeMode: 'contain',\n+  },\n });\n"
+                },
+                {
+                    "date": 1637012307446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React, { useState } from 'react';\n import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\n import Peso from './componentes/Peso';\n import Altura from './componentes/Altura';\n+import ButtonCalc from './componentes/ButtonCalc';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n@@ -29,19 +30,13 @@\n       </View>\n \n       <Peso aoModificar={setPeso} />\n \n-      <ALtura aoModificar={setAltura} />\n+      <Altura aoModificar={setAltura} />\n       \n+      <ButtonCalc aoClicar={calcImc} />\n+\n       <View style={styles.bloco}>\n-        <TouchableHighlight\n-          style={styles.btnCalc}\n-          onPress={() => calcImc()}\n-        >\n-          <Text style={styles.txtBtn}>Calcular IMC</Text>\n-        </TouchableHighlight>\n-      </View>\n-      <View style={styles.bloco}>\n         <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n       <View style={styles.bloco}>\n         <Image\n"
+                },
+                {
+                    "date": 1637012396300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,22 +37,21 @@\n \n       <View style={styles.bloco}>\n         <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n+\n       <View style={styles.bloco}>\n         <Image\n           style={styles.image}\n           source={require('./assets/image/imc.jpg')}\n         />\n       </View>\n+\n     </SafeAreaView >\n   );\n }\n \n const styles = StyleSheet.create({\n-  corpo: {\n-    padding: 10,\n-  },\n   bloco: {\n     marginBottom: 20,\n   },\n   txt: {\n"
+                },
+                {
+                    "date": 1637012428534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     setResultado(r.toFixed(1))\n   }\n \n   return (\n-    <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n+    <SafeAreaView>\n       <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n \n"
+                },
+                {
+                    "date": 1637012468516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     setResultado(r.toFixed(1))\n   }\n \n   return (\n-    <SafeAreaView>\n+    <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n       <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n \n"
+                },
+                {
+                    "date": 1637012765010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\n import Peso from './componentes/Peso';\n import Altura from './componentes/Altura';\n import ButtonCalc from './componentes/ButtonCalc';\n+import Resultado from './componentes/Resultado';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n@@ -34,11 +35,9 @@\n       <Altura aoModificar={setAltura} />\n       \n       <ButtonCalc aoClicar={calcImc} />\n \n-      <View style={styles.bloco}>\n-        <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n-      </View>\n+      <Resultado valorResultado={resultado} />\n \n       <View style={styles.bloco}>\n         <Image\n           style={styles.image}\n"
+                },
+                {
+                    "date": 1637013064597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import Peso from './componentes/Peso';\n import Altura from './componentes/Altura';\n import ButtonCalc from './componentes/ButtonCalc';\n import Resultado from './componentes/Resultado';\n+import Tabela from './componentes/Tabela';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n@@ -37,14 +38,9 @@\n       <ButtonCalc aoClicar={calcImc} />\n \n       <Resultado valorResultado={resultado} />\n \n-      <View style={styles.bloco}>\n-        <Image\n-          style={styles.image}\n-          source={require('./assets/image/imc.jpg')}\n-        />\n-      </View>\n+      <Tabela />\n \n     </SafeAreaView >\n   );\n }\n"
+                },
+                {
+                    "date": 1637013270209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useState } from 'react';\n-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\n+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n import Peso from './componentes/Peso';\n import Altura from './componentes/Altura';\n import ButtonCalc from './componentes/ButtonCalc';\n import Resultado from './componentes/Resultado';\n"
+                },
+                {
+                    "date": 1637013426511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,29 +48,5 @@\n const styles = StyleSheet.create({\n   bloco: {\n     marginBottom: 20,\n   },\n-  txt: {\n-    width: '100%',\n-    borderWidth: 1,\n-    borderColor: '#000',\n-    padding: 10,\n-    borderRadius: 10,\n-  },\n-  btnCalc: {\n-    backgroundColor: '#048',\n-    justifyContent: 'center',\n-    alignItems: 'center',\n-    padding: 10,\n-    borderRadius: 10,\n-  },\n-  txtBtn: {\n-    fontSize: 15,\n-    textTransform: 'uppercase',\n-    color: '#fff',\n-  },\n-  image: {\n-    width: '100%',\n-    height: 300,\n-    resizeMode: 'contain',\n-  },\n });\n"
+                },
+                {
+                    "date": 1637013515241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,15 +31,11 @@\n         <Text>Calculadora de IMC</Text>\n       </View>\n \n       <Peso aoModificar={setPeso} />\n-\n       <Altura aoModificar={setAltura} />\n-      \n       <ButtonCalc aoClicar={calcImc} />\n-\n       <Resultado valorResultado={resultado} />\n-\n       <Tabela />\n \n     </SafeAreaView >\n   );\n"
                 }
             ],
             "date": 1637003118146,

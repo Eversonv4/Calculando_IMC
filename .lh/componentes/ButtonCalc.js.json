@@ -1,0 +1,22 @@
+{
+    "sourceFile": "componentes/ButtonCalc.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1637012305965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637012833817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return(\r\n     <View style={styles.bloco}>\r\n       <TouchableHighlight\r\n         style={styles.btnCalc}\r\n-        onPress={() => calcImc()}\r\n+        onPress={props.aoClicar}\r\n       >\r\n         <Text style={styles.txtBtn}>Calcular IMC</Text>\r\n       </TouchableHighlight>\r\n     </View>\r\n"
+                }
+            ],
+            "date": 1637012305965,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { StyleSheet, Text, View, TouchableHighlight } from 'react-native';\r\n\r\nexport default props => {\r\n  return(\r\n    <View style={styles.bloco}>\r\n      <TouchableHighlight\r\n        style={styles.btnCalc}\r\n        onPress={() => calcImc()}\r\n      >\r\n        <Text style={styles.txtBtn}>Calcular IMC</Text>\r\n      </TouchableHighlight>\r\n    </View>\r\n  )\r\n}\r\n\r\nconst styles = StyleSheet.create({\r\n  bloco: {\r\n    marginBottom: 20,\r\n  },\r\n  btnCalc: {\r\n    backgroundColor: '#048',\r\n    justifyContent: 'center',\r\n    alignItems: 'center',\r\n    padding: 10,\r\n    borderRadius: 10,\r\n  },\r\n  txtBtn: {\r\n    fontSize: 15,\r\n    textTransform: 'uppercase',\r\n    color: '#fff',\r\n  },\r\n});"
+        }
+    ]
+}

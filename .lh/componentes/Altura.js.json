@@ -1,0 +1,18 @@
+{
+    "sourceFile": "componentes/Altura.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1637011862867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1637011862867,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { StyleSheet, Text, View, TextInput } from 'react-native';\r\n\r\nexport default props => {\r\n  return(\r\n    <View style={styles.bloco}>\r\n      <Text>Informe sua altura:</Text>\r\n      <TextInput\r\n        style={styles.txt}\r\n        autoFocus={false}\r\n        keyboardType={'numeric'}\r\n        onChangeText={text => props.aoModificar(text)}\r\n      ></TextInput>\r\n    </View>\r\n  )\r\n}\r\n\r\nconst styles = StyleSheet.create({\r\n  bloco: {\r\n    marginBottom: 20,\r\n  },\r\n  txt: {\r\n    width: '100%',\r\n    borderWidth: 1,\r\n    borderColor: '#000',\r\n    padding: 10,\r\n    borderRadius: 10,\r\n  },\r\n});"
+        }
+    ]
+}

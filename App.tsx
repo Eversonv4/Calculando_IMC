@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import Peso from './componentes/Peso';
+import Altura from './componentes/Altura';
+import ButtonCalc from './componentes/ButtonCalc';
+import Resultado from './componentes/Resultado';
+import Tabela from './componentes/Tabela';
 
 export default function calc() {
 
@@ -25,79 +30,19 @@ export default function calc() {
       <View style={styles.bloco}>
         <Text>Calculadora de IMC</Text>
       </View>
-      <View style={styles.bloco}>
-        <Text>Informe seu peso:</Text>
-        <TextInput
-          style={styles.txt}
-          autoFocus={false}
-          keyboardType={'numeric'}
-          onChangeText={text => setPeso(text)}
-        >
-        </TextInput>
-      </View>
-      <View style={styles.bloco}>
-        <Text>Informe sua altura:</Text>
-        <TextInput
-          style={styles.txt}
-          autoFocus={false}
-          keyboardType={'numeric'}
-          onChangeText={text => setAltura(text)}
-        >
-        </TextInput>
 
-        {/* <Button title="Aperta aqui" onPress={() => { alert("Olá, mundo!") }} /> */}
+      <Peso aoModificar={setPeso} />
+      <Altura aoModificar={setAltura} />
+      <ButtonCalc aoClicar={calcImc} />
+      <Resultado valorResultado={resultado} />
+      <Tabela />
 
-      </View>
-      <View style={styles.bloco}>
-        <TouchableHighlight
-          style={styles.btnCalc}
-          onPress={() => calcImc()}
-        >
-          <Text style={styles.txtBtn}>Calcular IMC</Text>
-        </TouchableHighlight>
-      </View>
-      <View style={styles.bloco}>
-        <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>
-      </View>
-      <View style={styles.bloco}>
-        <Image
-          style={styles.image}
-          source={require('./assets/image/imc.jpg')}
-        />
-      </View>
     </SafeAreaView >
   );
 }
 
 const styles = StyleSheet.create({
-  corpo: {
-    padding: 10,
-  },
   bloco: {
     marginBottom: 20,
-  },
-  txt: {
-    width: '100%',
-    borderWidth: 1,
-    borderColor: '#000',
-    padding: 10,
-    borderRadius: 10,
-  },
-  btnCalc: {
-    backgroundColor: '#048',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 10,
-    borderRadius: 10,
-  },
-  txtBtn: {
-    fontSize: 15,
-    textTransform: 'uppercase',
-    color: '#fff',
-  },
-  image: {
-    width: 400,
-    height: 300,
-    resizeMode: 'contain',
   },
 });

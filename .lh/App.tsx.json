@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 81,
+            "activePatchIndex": 87,
             "patches": [
                 {
                     "date": 1636261706328,
@@ -332,6 +332,30 @@
                 {
                     "date": 1637006582551,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,6 +97,7 @@\n   },\n   image: {\n     width: 400,\n     height: 300,\n+    resizeMode: 'contain',\n   },\n });\n"
+                },
+                {
+                    "date": 1637007989824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n     textTransform: 'uppercase',\n     color: '#fff',\n   },\n   image: {\n-    width: 400,\n+    width: '100%',\n     height: 300,\n     resizeMode: 'contain',\n   },\n });\n"
+                },
+                {
+                    "date": 1637010909730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useState } from 'react';\n-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Button, Image } from 'react-native';\n+import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n@@ -43,11 +43,8 @@\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n         </TextInput>\n-\n-        {/* <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} /> */}\n-\n       </View>\n       <View style={styles.bloco}>\n         <TouchableHighlight\n           style={styles.btnCalc}\n"
+                },
+                {
+                    "date": 1637011264880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,19 +24,10 @@\n     <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n       <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n+\n       <View style={styles.bloco}>\n-        <Text>Informe seu peso:</Text>\n-        <TextInput\n-          style={styles.txt}\n-          autoFocus={false}\n-          keyboardType={'numeric'}\n-          onChangeText={text => setPeso(text)}\n-        >\n-        </TextInput>\n-      </View>\n-      <View style={styles.bloco}>\n         <Text>Informe sua altura:</Text>\n         <TextInput\n           style={styles.txt}\n           autoFocus={false}\n"
+                },
+                {
+                    "date": 1637011310281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import React, { useState } from 'react';\n import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\n+import Peso from './componentes/Peso';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n"
+                },
+                {
+                    "date": 1637011332181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,10 @@\n       <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n \n+      <Peso />\n+\n       <View style={styles.bloco}>\n         <Text>Informe sua altura:</Text>\n         <TextInput\n           style={styles.txt}\n"
+                },
+                {
+                    "date": 1637011484381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n \n-      <Peso />\n+      <Peso aoModificar={setPeso} />\n \n       <View style={styles.bloco}>\n         <Text>Informe sua altura:</Text>\n         <TextInput\n"
                 }
             ],
             "date": 1636261706328,

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "componentes/Resultado.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1637012761080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1637012761080,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { StyleSheet, Text, View } from 'react-native';\r\n\r\nexport default props => {\r\n  return(\r\n    <View style={styles.bloco}>\r\n      <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{props.valorResultado}</Text> </Text>\r\n    </View>\r\n  )\r\n}\r\n\r\nconst styles = StyleSheet.create({\r\n  bloco: {\r\n    marginBottom: 20,\r\n  },\r\n});"
+        }
+    ]
+}

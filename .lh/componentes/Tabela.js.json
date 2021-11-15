@@ -1,0 +1,26 @@
+{
+    "sourceFile": "componentes/Tabela.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1637013062041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637013091906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return(\r\n     <View style={styles.bloco}>\r\n       <Image\r\n         style={styles.image}\r\n-        source={require('./assets/image/imc.jpg')}\r\n+        source={require('../assets/image/imc.jpg')}\r\n       />\r\n     </View>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1637013236666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import { StyleSheet, View } from 'react-native';\r\n+import { StyleSheet, View, Image } from 'react-native';\r\n \r\n export default () => {\r\n   return(\r\n     <View style={styles.bloco}>\r\n"
+                }
+            ],
+            "date": 1637013062041,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { StyleSheet, View } from 'react-native';\r\n\r\nexport default () => {\r\n  return(\r\n    <View style={styles.bloco}>\r\n      <Image\r\n        style={styles.image}\r\n        source={require('./assets/image/imc.jpg')}\r\n      />\r\n    </View>\r\n  )\r\n}\r\n\r\nconst styles = StyleSheet.create({\r\n  bloco: {\r\n    marginBottom: 20,\r\n  },\r\n  image: {\r\n    width: '100%',\r\n    height: 300,\r\n    resizeMode: 'contain',\r\n  },\r\n});"
+        }
+    ]
+}

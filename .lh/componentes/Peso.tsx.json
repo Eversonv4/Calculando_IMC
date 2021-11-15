@@ -1,0 +1,26 @@
+{
+    "sourceFile": "componentes/Peso.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1637011179658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637011261677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-import React, { useState } from 'react';\r\n-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\r\n+import React from 'react';\r\n+import { StyleSheet, Text, View, TextInput } from 'react-native';\r\n \r\n export default props => {\r\n   return (\r\n     <View style={styles.bloco}>\r\n@@ -12,5 +12,18 @@\n         onChangeText={text => setPeso(text)}\r\n       ></TextInput>\r\n     </View>\r\n   )\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+const styles = StyleSheet.create({\r\n+  bloco: {\r\n+    marginBottom: 20,\r\n+  },\r\n+  txt: {\r\n+    width: '100%',\r\n+    borderWidth: 1,\r\n+    borderColor: '#000',\r\n+    padding: 10,\r\n+    borderRadius: 10,\r\n+  },\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637011482153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       <TextInput\r\n         style={styles.txt}\r\n         autoFocus={false}\r\n         keyboardType={'numeric'}\r\n-        onChangeText={text => setPeso(text)}\r\n+        onChangeText={text => props.aoModificar(text)}\r\n       ></TextInput>\r\n     </View>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1637011179658,
+            "name": "Commit-0",
+            "content": "import React, { useState } from 'react';\r\nimport { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Image } from 'react-native';\r\n\r\nexport default props => {\r\n  return (\r\n    <View style={styles.bloco}>\r\n      <Text>Informe seu peso:</Text>\r\n      <TextInput\r\n        style={styles.txt}\r\n        autoFocus={false}\r\n        keyboardType={'numeric'}\r\n        onChangeText={text => setPeso(text)}\r\n      ></TextInput>\r\n    </View>\r\n  )\r\n}"
+        }
+    ]
+}
