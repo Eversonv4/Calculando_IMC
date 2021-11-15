@@ -1,0 +1,342 @@
+{
+    "sourceFile": "App.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 81,
+            "patches": [
+                {
+                    "date": 1636261706328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1636261756525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,9 @@\n \n export default function App() {\n   return (\n     <View style={styles.container}>\n-      <Text>Open up App.tsx to start working on your app!</Text>\n-      <Text>Fuck that pussy</Text>\n+      <Text>I'm walking here</Text>\n       <StatusBar style=\"auto\" />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1636261764662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { StatusBar } from 'expo-status-bar';\n+import React from 'react';\n+import { StyleSheet, Text, View } from 'react-native';\n+\n+export default function App() {\n+  return (\n+    <View style={styles.container}>\n+      <Text>I'm walking her</Text>\n+      <StatusBar style=\"auto\" />\n+    </View>\n+  );\n+}\n+\n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    backgroundColor: '#fff',\n+    alignItems: 'center',\n+    justifyContent: 'center',\n+  },\n+});\n"
+                },
+                {
+                    "date": 1636262945171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { StatusBar } from 'expo-status-bar';\n+import React from 'react';\n+import { StyleSheet, Text, View } from 'react-native';\n+\n+export default function App() {\n+  return (\n+    <View style={styles.container}>\n+      <Text>Olá, mundo!</Text>\n+      <StatusBar style=\"auto\" />\n+    </View>\n+  );\n+}\n+\n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    backgroundColor: '#fff',\n+    alignItems: 'center',\n+    justifyContent: 'center',\n+  },\n+});\n"
+                },
+                {
+                    "date": 1636263969817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { StatusBar } from 'expo-status-bar';\n+// import { StatusBar } from 'expo-status-bar';\n import React from 'react';\n import { StyleSheet, Text, View } from 'react-native';\n \n export default function App() {\n@@ -18,46 +18,4 @@\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n });\n-import { StatusBar } from 'expo-status-bar';\n-import React from 'react';\n-import { StyleSheet, Text, View } from 'react-native';\n-\n-export default function App() {\n-  return (\n-    <View style={styles.container}>\n-      <Text>I'm walking her</Text>\n-      <StatusBar style=\"auto\" />\n-    </View>\n-  );\n-}\n-\n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    backgroundColor: '#fff',\n-    alignItems: 'center',\n-    justifyContent: 'center',\n-  },\n-});\n-import { StatusBar } from 'expo-status-bar';\n-import React from 'react';\n-import { StyleSheet, Text, View } from 'react-native';\n-\n-export default function App() {\n-  return (\n-    <View style={styles.container}>\n-      <Text>I'm walking here</Text>\n-      <StatusBar style=\"auto\" />\n-    </View>\n-  );\n-}\n-\n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    backgroundColor: '#fff',\n-    alignItems: 'center',\n-    justifyContent: 'center',\n-  },\n-});\n"
+                },
+                {
+                    "date": 1636264077780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-// import { StatusBar } from 'expo-status-bar';\n+import { StatusBar } from 'expo-status-bar';\n import React from 'react';\n import { StyleSheet, Text, View } from 'react-native';\n \n export default function App() {\n"
+                },
+                {
+                    "date": 1636265554097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import { StatusBar } from 'expo-status-bar';\n import React from 'react';\n import { StyleSheet, Text, View } from 'react-native';\n+import { Ever } from './componentes/comp1';\n \n export default function App() {\n   return (\n     <View style={styles.container}>\n       <Text>Olá, mundo!</Text>\n+      <Ever />\n       <StatusBar style=\"auto\" />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1636265576036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { StatusBar } from 'expo-status-bar';\n import React from 'react';\n import { StyleSheet, Text, View } from 'react-native';\n-import { Ever } from './componentes/comp1';\n+import Ever from './componentes/comp1';\n \n export default function App() {\n   return (\n     <View style={styles.container}>\n"
+                },
+                {
+                    "date": 1636265617927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import { StatusBar } from 'expo-status-bar';\n+import React from 'react';\n+import { StyleSheet, Text, View } from 'react-native';\n+import Ever from './componentes/';\n+\n+export default function App() {\n+  return (\n+    <View style={styles.container}>\n+      <Text>Olá, mundo!</Text>\n+      <Ever />\n+      <StatusBar style=\"auto\" />\n+    </View>\n+  );\n+}\n+\n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    backgroundColor: '#fff',\n+    alignItems: 'center',\n+    justifyContent: 'center',\n+  },\n+});\n"
+                },
+                {
+                    "date": 1636265630911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import { StatusBar } from 'expo-status-bar';\n+import React from 'react';\n+import { StyleSheet, Text, View } from 'react-native';\n+import Ever from './componentes';\n+\n+export default function App() {\n+  return (\n+    <View style={styles.container}>\n+      <Text>Olá, mundo!</Text>\n+      <Ever />\n+      <StatusBar style=\"auto\" />\n+    </View>\n+  );\n+}\n+\n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    backgroundColor: '#fff',\n+    alignItems: 'center',\n+    justifyContent: 'center',\n+  },\n+});\n"
+                },
+                {
+                    "date": 1636990870796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,11 @@\n-import { StatusBar } from 'expo-status-bar';\n import React from 'react';\n-import { StyleSheet, Text, View } from 'react-native';\n-import Ever from './componentes';\n+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function App() {\n   return (\n     <View style={styles.container}>\n       <Text>Olá, mundo!</Text>\n-      <Ever />\n       <StatusBar style=\"auto\" />\n     </View>\n   );\n }\n@@ -20,50 +17,4 @@\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n });\n-import { StatusBar } from 'expo-status-bar';\n-import React from 'react';\n-import { StyleSheet, Text, View } from 'react-native';\n-import Ever from './componentes/';\n-\n-export default function App() {\n-  return (\n-    <View style={styles.container}>\n-      <Text>Olá, mundo!</Text>\n-      <Ever />\n-      <StatusBar style=\"auto\" />\n-    </View>\n-  );\n-}\n-\n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    backgroundColor: '#fff',\n-    alignItems: 'center',\n-    justifyContent: 'center',\n-  },\n-});\n-import { StatusBar } from 'expo-status-bar';\n-import React from 'react';\n-import { StyleSheet, Text, View } from 'react-native';\n-import Ever from './componentes/comp1';\n-\n-export default function App() {\n-  return (\n-    <View style={styles.container}>\n-      <Text>Olá, mundo!</Text>\n-      <Ever />\n-      <StatusBar style=\"auto\" />\n-    </View>\n-  );\n-}\n-\n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    backgroundColor: '#fff',\n-    alignItems: 'center',\n-    justifyContent: 'center',\n-  },\n-});\n"
+                },
+                {
+                    "date": 1636990923308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n export default function App() {\n   return (\n     <View style={styles.container}>\n       <Text>Olá, mundo!</Text>\n-      <StatusBar style=\"auto\" />\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1636991165750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,10 @@\n     backgroundColor: '#fff',\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n+  titlePrincipal: {\n+    backgroundColor: '#0ff',\n+    fontSize: 22,\n+    letterSpacing: '5px',\n+  },\n });\n"
+                },
+                {
+                    "date": 1636991187233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n   },\n   titlePrincipal: {\n     backgroundColor: '#0ff',\n     fontSize: 22,\n-    letterSpacing: '5px',\n+    letterSpacing: 5,\n   },\n });\n"
+                },
+                {
+                    "date": 1636991206438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function App() {\n   return (\n     <View style={styles.container}>\n-      <Text>Olá, mundo!</Text>\n+      <Text style={styles.titlePrincipal}>Olá, mundo!</Text>\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637001312356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,14 @@\n import React from 'react';\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n-export default function App() {\n+export default function calc() {\n   return (\n-    <View style={styles.container}>\n-      <Text style={styles.titlePrincipal}>Olá, mundo!</Text>\n-    </View>\n+    <SafeAreaView>\n+      <Text>Olá, mundo!</Text>\n+    </SafeAreaView>\n   );\n }\n \n const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    backgroundColor: '#fff',\n-    alignItems: 'center',\n-    justifyContent: 'center',\n-  },\n-  titlePrincipal: {\n-    backgroundColor: '#0ff',\n-    fontSize: 22,\n-    letterSpacing: 5,\n-  },\n+\n });\n"
+                },
+                {
+                    "date": 1637001334504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     </SafeAreaView>\n   );\n }\n \n-const styles = StyleSheet.create({\n+/*const styles = StyleSheet.create({\n \n-});\n+});*/\n"
+                },
+                {
+                    "date": 1637001349287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <Text>Olá, mundo!</Text>\n+      <Text>Olá, mundo! bla ba</Text>\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637001395954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView>\n+    <View>\n       <Text>Olá, mundo! bla ba</Text>\n-    </SafeAreaView>\n+    </View>\n   );\n }\n \n /*const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1637001403503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <View>\n+    <SafeAreaView>\n       <Text>Olá, mundo! bla ba</Text>\n-    </View>\n+    </SafeAreaView>\n   );\n }\n \n /*const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1637001420410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <Text>Olá, mundo! bla ba</Text>\n+      <Text>Olá, mundo!</Text>\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637001527935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <Text>Olá, mundo!</Text>\n+      <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637001866208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView>\n+    <SafeAreaView style={{ flex: 1 }}>\n       <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637001920870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView style={{ flex: 1 }}>\n-      <Text>Calculadora de IMC</Text>\n+      <View>\n+        <Text>Calculadora de IMC</Text>\n+      </View>\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637001933019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView style={{ flex: 1 }}>\n-      <View>\n+      <View style={{ flex: 1 }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637001972025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView style={{ flex: 1 }}>\n+    <SafeAreaView>\n       <View style={{ flex: 1 }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n"
+                },
+                {
+                    "date": 1637001993206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ flex: 1 }}>\n+      <View style={{ flex: 1, backgroundColor: '#f00' }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002000506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ flex: 1, backgroundColor: '#f00' }}>\n+      <View style={{ flex: 1, backgroundColor: '#f00', }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002057773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ flex: 1, backgroundColor: '#f00', }}>\n+      <View style={{ flex: 2, backgroundColor: '#f00', }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002063507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ flex: 2, backgroundColor: '#f00', }}>\n+      <View style={{ flex: 1, backgroundColor: '#f00', }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002205363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ flex: 1, backgroundColor: '#f00', }}>\n+      <View style={{ backgroundColor: '#f00', }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002228456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ backgroundColor: '#f00', }}>\n+      <View style={{ backgroundColor: '#f00' }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002246864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ backgroundColor: '#f00' }}>\n+      <View>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002292626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View>\n+      <View style={{ marginTop: 10 }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002298133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ marginTop: 10 }}>\n+      <View style={{ marginTop: 15 }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002305133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ marginTop: 15 }}>\n+      <View style={{ marginTop: 16 }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002327562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function calc() {\n   return (\n     <SafeAreaView>\n-      <View style={{ marginTop: 16 }}>\n+      <View style={{ marginTop: 20, backgroundColor: '#ff0', }}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002365126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,10 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView>\n-      <View style={{ marginTop: 20, backgroundColor: '#ff0', }}>\n-        <Text>Calculadora de IMC</Text>\n-      </View>\n+    <SafeAreaView style={{ marginTop: 20, backgroundColor: '#ff0', }}>\n+      <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637002377342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView style={{ marginTop: 20, backgroundColor: '#ff0', }}>\n+    <SafeAreaView style={{ backgroundColor: '#ff0', }}>\n       <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637002382658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView style={{ backgroundColor: '#ff0', }}>\n+    <SafeAreaView style={{ marginTop: 20, backgroundColor: '#ff0', }}>\n       <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637002417102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView style={{ marginTop: 20, backgroundColor: '#ff0', }}>\n+    <SafeAreaView style={{ marginTop: 20, }}>\n       <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637002433078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n \n export default function calc() {\n   return (\n-    <SafeAreaView style={{ marginTop: 20, }}>\n+    <SafeAreaView style={{ marginTop: 20 }}>\n       <Text>Calculadora de IMC</Text>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637002746250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,30 @@\n-import React from 'react';\n-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';\n+import React, { useState } from 'react';\n+import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput } from 'react-native';\n \n export default function calc() {\n+\n+  const [peso, setPeso] = useState(0);\n+  const [altura, setAltura] = useState(0);\n+  const [resultado, setResultado] = useState(0);\n+\n   return (\n     <SafeAreaView style={{ marginTop: 20 }}>\n       <Text>Calculadora de IMC</Text>\n+      <View>\n+        <Text>Informe seu peso:</Text>\n+        <TextInput\n+          autoFocus={true}\n+          keyboardType={'numeric'}\n+          value={peso}\n+          onChangeText={text => { setPeso(text) }}\n+        >\n+\n+        </TextInput>\n+      </View>\n     </SafeAreaView>\n   );\n }\n \n-/*const styles = StyleSheet.create({\n+const styles = StyleSheet.create({\n \n-});*/\n+});\n"
+                },
+                {
+                    "date": 1637002792194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         <Text>Informe seu peso:</Text>\n         <TextInput\n           autoFocus={true}\n           keyboardType={'numeric'}\n-          value={peso}\n+          value={'${peso}'}\n           onChangeText={text => { setPeso(text) }}\n         >\n \n         </TextInput>\n"
+                },
+                {
+                    "date": 1637002810710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n         <Text>Informe seu peso:</Text>\n         <TextInput\n           autoFocus={true}\n           keyboardType={'numeric'}\n-          value={'${peso}'}\n           onChangeText={text => { setPeso(text) }}\n         >\n \n         </TextInput>\n"
+                },
+                {
+                    "date": 1637002850996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n           autoFocus={true}\n           keyboardType={'numeric'}\n           onChangeText={text => { setPeso(text) }}\n         >\n-\n+          whatever\n         </TextInput>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002863655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n           autoFocus={true}\n           keyboardType={'numeric'}\n           onChangeText={text => { setPeso(text) }}\n         >\n-          whatever\n         </TextInput>\n       </View>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1637002885204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         <Text>Informe seu peso:</Text>\n         <TextInput\n           autoFocus={true}\n           keyboardType={'numeric'}\n-          onChangeText={text => { setPeso(text) }}\n+          onChangeText={text => setPeso(text)}\n         >\n         </TextInput>\n       </View>\n     </SafeAreaView>\n"
+                },
+                {
+                    "date": 1637002967494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n   return (\n-    <SafeAreaView style={{ marginTop: 20 }}>\n+    <SafeAreaView>\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n"
+                },
+                {
+                    "date": 1637003002791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         >\n         </TextInput>\n       </View>\n     </SafeAreaView>\n-  );\n+  )\n }\n \n const styles = StyleSheet.create({\n \n"
+                },
+                {
+                    "date": 1637003036787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n   return (\n-    <SafeAreaView>\n+    <SafeAreaView style={{ marginTop: 20 }}>\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n@@ -19,9 +19,9 @@\n         >\n         </TextInput>\n       </View>\n     </SafeAreaView>\n-  )\n+  );\n }\n \n const styles = StyleSheet.create({\n \n"
+                },
+                {
+                    "date": 1637003286328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,17 @@\n           onChangeText={text => setPeso(text)}\n         >\n         </TextInput>\n       </View>\n+      <View>\n+        <Text>Informe sua altura:</Text>\n+        <TextInput\n+          autoFocus={true}\n+          keyboardType={'numeric'}\n+          onChangeText={text => setAltura(text)}\n+        >\n+        </TextInput>\n+      </View>\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637003802136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       </View>\n       <View>\n         <Text>Informe sua altura:</Text>\n         <TextInput\n-          autoFocus={true}\n+          autoFocus={false}\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n         </TextInput>\n"
+                },
+                {
+                    "date": 1637003817253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n-          autoFocus={true}\n+          autoFocus={false}\n           keyboardType={'numeric'}\n           onChangeText={text => setPeso(text)}\n         >\n         </TextInput>\n"
+                },
+                {
+                    "date": 1637004185408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useState } from 'react';\n-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput } from 'react-native';\n+import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Button } from 'react-native';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n@@ -26,8 +26,9 @@\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n         </TextInput>\n+        <Button onPress={() => { alert(\"Olá, mundo!\") }} />\n       </View>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637004254233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n         </TextInput>\n-        <Button onPress={() => { alert(\"Olá, mundo!\") }} />\n+        <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} />\n       </View>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637004334997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n         </TextInput>\n-        <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} />\n+        {/* <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} /> */}\n       </View>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637004353672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,11 @@\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n         </TextInput>\n+\n         {/* <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} /> */}\n+\n       </View>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637004525050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,24 @@\n \n         {/* <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} /> */}\n \n       </View>\n+      <View>\n+        <TouchableHighlight\n+\n+        >\n+          <Text>Calcular IMC</Text>\n+        </TouchableHighlight>\n+      </View>\n     </SafeAreaView>\n   );\n }\n \n const styles = StyleSheet.create({\n-\n+  txt: {\n+    width: '100%',\n+    borderWidth: 1,\n+    borderColor: '#000',\n+    padding: 10,\n+    borderRadius: 10,\n+  }\n });\n"
+                },
+                {
+                    "date": 1637004566867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n+          style={styles.txt}\n           autoFocus={false}\n           keyboardType={'numeric'}\n           onChangeText={text => setPeso(text)}\n         >\n"
+                },
+                {
+                    "date": 1637004596769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n       </View>\n       <View>\n         <Text>Informe sua altura:</Text>\n         <TextInput\n+          style={styles.txt}\n           autoFocus={false}\n           keyboardType={'numeric'}\n           onChangeText={text => setAltura(text)}\n         >\n"
+                },
+                {
+                    "date": 1637004662834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n   return (\n-    <SafeAreaView style={{ marginTop: 20 }}>\n+    <SafeAreaView style={{ marginTop: 20 }, styles.corpo}>\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n@@ -44,8 +44,11 @@\n   );\n }\n \n const styles = StyleSheet.create({\n+  corpo: {\n+    padding: 10,\n+  },\n   txt: {\n     width: '100%',\n     borderWidth: 1,\n     borderColor: '#000',\n"
+                },
+                {
+                    "date": 1637004693526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n   return (\n-    <SafeAreaView style={{ marginTop: 20 }, styles.corpo}>\n+    <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n"
+                },
+                {
+                    "date": 1637004935285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,12 @@\n   const [resultado, setResultado] = useState(0);\n \n   return (\n     <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n-      <Text>Calculadora de IMC</Text>\n       <View>\n+        <Text>Calculadora de IMC</Text>\n+      </View>\n+      <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n           style={styles.txt}\n           autoFocus={false}\n"
+                },
+                {
+                    "date": 1637005013904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n   const [resultado, setResultado] = useState(0);\n \n   return (\n     <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n-      <View>\n+      <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n       </View>\n-      <View>\n+      <View style={styles.bloco}>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n           style={styles.txt}\n           autoFocus={false}\n@@ -21,9 +21,9 @@\n           onChangeText={text => setPeso(text)}\n         >\n         </TextInput>\n       </View>\n-      <View>\n+      <View style={styles.bloco}>\n         <Text>Informe sua altura:</Text>\n         <TextInput\n           style={styles.txt}\n           autoFocus={false}\n@@ -34,9 +34,9 @@\n \n         {/* <Button title=\"Aperta aqui\" onPress={() => { alert(\"Olá, mundo!\") }} /> */}\n \n       </View>\n-      <View>\n+      <View style={styles.bloco}>\n         <TouchableHighlight\n \n         >\n           <Text>Calcular IMC</Text>\n@@ -49,8 +49,11 @@\n const styles = StyleSheet.create({\n   corpo: {\n     padding: 10,\n   },\n+  bloco: {\n+    marginBottom: 20,\n+  },\n   txt: {\n     width: '100%',\n     borderWidth: 1,\n     borderColor: '#000',\n"
+                },
+                {
+                    "date": 1637005271017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,13 +36,16 @@\n \n       </View>\n       <View style={styles.bloco}>\n         <TouchableHighlight\n-\n+          style={styles.btnCalc}\n         >\n-          <Text>Calcular IMC</Text>\n+          <Text style={styles.txtBtn}>Calcular IMC</Text>\n         </TouchableHighlight>\n       </View>\n+      <View style={styles.bloco}>\n+        <Text>Resultado: { }</Text>\n+      </View>\n     </SafeAreaView>\n   );\n }\n \n@@ -58,6 +61,17 @@\n     borderWidth: 1,\n     borderColor: '#000',\n     padding: 10,\n     borderRadius: 10,\n-  }\n+  },\n+  btnCalc: {\n+    backgroundColor: '#048',\n+    justifyContent: 'center',\n+    alignItems: 'center',\n+    padding: 10,\n+  },\n+  txtBtn: {\n+    fontSize: 15,\n+    textTransform: 'uppercase',\n+    color: '#fff',\n+  },\n });\n"
+                },
+                {
+                    "date": 1637005293589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,9 @@\n     backgroundColor: '#048',\n     justifyContent: 'center',\n     alignItems: 'center',\n     padding: 10,\n+    borderRadius: 10,\n   },\n   txtBtn: {\n     fontSize: 15,\n     textTransform: 'uppercase',\n"
+                },
+                {
+                    "date": 1637005763724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,21 @@\n   const [peso, setPeso] = useState(0);\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n+  const calcImc = () => {\n+    if (peso == 0 || !peso) {\n+      alert(\"Informe o peso\");\n+      return\n+    }\n+    if (altura == 0 || !altura) {\n+      alert(\"Informe a altura\");\n+      return\n+    }\n+    const r = peso / (Math.pow(altura, 2));\n+    setResultado(r.toFixed(1))\n+  }\n+\n   return (\n     <SafeAreaView style={{ marginTop: 20, padding: 10, }}>\n       <View style={styles.bloco}>\n         <Text>Calculadora de IMC</Text>\n@@ -37,14 +50,15 @@\n       </View>\n       <View style={styles.bloco}>\n         <TouchableHighlight\n           style={styles.btnCalc}\n+          onPress={calcImc}\n         >\n           <Text style={styles.txtBtn}>Calcular IMC</Text>\n         </TouchableHighlight>\n       </View>\n       <View style={styles.bloco}>\n-        <Text>Resultado: { }</Text>\n+        <Text>Resultado: {resultado}</Text>\n       </View>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637005816912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n       </View>\n       <View style={styles.bloco}>\n         <TouchableHighlight\n           style={styles.btnCalc}\n-          onPress={calcImc}\n+          onPress={() => calcImc()}\n         >\n           <Text style={styles.txtBtn}>Calcular IMC</Text>\n         </TouchableHighlight>\n       </View>\n"
+                },
+                {
+                    "date": 1637005941186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n           <Text style={styles.txtBtn}>Calcular IMC</Text>\n         </TouchableHighlight>\n       </View>\n       <View style={styles.bloco}>\n-        <Text>Resultado: {resultado}</Text>\n+        <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n     </SafeAreaView>\n   );\n }\n"
+                },
+                {
+                    "date": 1637006305741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useState } from 'react';\n-import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Button } from 'react-native';\n+import { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput, Button, Image } from 'react-native';\n \n export default function calc() {\n \n   const [peso, setPeso] = useState(0);\n@@ -58,8 +58,11 @@\n       </View>\n       <View style={styles.bloco}>\n         <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n+      <Image\n+        source={require('./assets/image/imc.jpg')}\n+      />\n     </SafeAreaView>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1637006366470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n       <View style={styles.bloco}>\n         <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n       <Image\n+        style={styles.image}\n         source={require('./assets/image/imc.jpg')}\n       />\n     </SafeAreaView>\n   );\n@@ -91,5 +92,9 @@\n     fontSize: 15,\n     textTransform: 'uppercase',\n     color: '#fff',\n   },\n+  image: {\n+    width: '100%',\n+    objectFit: 'contain',\n+  },\n });\n"
+                },
+                {
+                    "date": 1637006379956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,7 +94,6 @@\n     color: '#fff',\n   },\n   image: {\n     width: '100%',\n-    objectFit: 'contain',\n   },\n });\n"
+                },
+                {
+                    "date": 1637006413770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,7 +93,8 @@\n     textTransform: 'uppercase',\n     color: '#fff',\n   },\n   image: {\n-    width: '100%',\n+    width: 100,\n+    height: 100,\n   },\n });\n"
+                },
+                {
+                    "date": 1637006420693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,8 +93,8 @@\n     textTransform: 'uppercase',\n     color: '#fff',\n   },\n   image: {\n-    width: 100,\n+    width: 400,\n     height: 100,\n   },\n });\n"
+                },
+                {
+                    "date": 1637006431166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,7 +94,7 @@\n     color: '#fff',\n   },\n   image: {\n     width: 400,\n-    height: 100,\n+    height: 300,\n   },\n });\n"
+                },
+                {
+                    "date": 1637006469582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,6 +95,7 @@\n   },\n   image: {\n     width: 400,\n     height: 300,\n+    objectFit: 'cover',\n   },\n });\n"
+                },
+                {
+                    "date": 1637006486745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,8 +94,7 @@\n     color: '#fff',\n   },\n   image: {\n     width: 400,\n-    height: 300,\n-    objectFit: 'cover',\n+    height: 200,\n   },\n });\n"
+                },
+                {
+                    "date": 1637006526146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,13 +58,15 @@\n       </View>\n       <View style={styles.bloco}>\n         <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n+      <Viewstyle={styles.bloco}>\n       <Image\n         style={styles.image}\n         source={require('./assets/image/imc.jpg')}\n       />\n-    </SafeAreaView>\n+      </View>\n+    </SafeAreaView >\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1637006532369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,13 +58,13 @@\n       </View>\n       <View style={styles.bloco}>\n         <Text>Resultado: <Text style={{ fontSize: 25, color: '#0ff', fontWeight: 'bold' }}>{resultado}</Text> </Text>\n       </View>\n-      <Viewstyle={styles.bloco}>\n-      <Image\n-        style={styles.image}\n-        source={require('./assets/image/imc.jpg')}\n-      />\n+      <View style={styles.bloco}>\n+        <Image\n+          style={styles.image}\n+          source={require('./assets/image/imc.jpg')}\n+        />\n       </View>\n     </SafeAreaView >\n   );\n }\n"
+                },
+                {
+                    "date": 1637006549712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,7 +96,7 @@\n     color: '#fff',\n   },\n   image: {\n     width: 400,\n-    height: 200,\n+    height: 300,\n   },\n });\n"
+                },
+                {
+                    "date": 1637006582551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,6 +97,7 @@\n   },\n   image: {\n     width: 400,\n     height: 300,\n+    resizeMode: 'contain',\n   },\n });\n"
+                }
+            ],
+            "date": 1636261706328,
+            "name": "Commit-0",
+            "content": "import { StatusBar } from 'expo-status-bar';\nimport React from 'react';\nimport { StyleSheet, Text, View } from 'react-native';\n\nexport default function App() {\n  return (\n    <View style={styles.container}>\n      <Text>Open up App.tsx to start working on your app!</Text>\n      <Text>Fuck that pussy</Text>\n      <StatusBar style=\"auto\" />\n    </View>\n  );\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: '#fff',\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n});\n"
+        }
+    ]
+}

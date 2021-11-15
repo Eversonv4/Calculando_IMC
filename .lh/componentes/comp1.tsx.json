@@ -1,0 +1,38 @@
+{
+    "sourceFile": "componentes/comp1.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1636265487878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1636265506825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react';\r\n+import { StyleSheet, Text, View } from 'react-native';\r\n+\r\n+export default function ever() {\r\n+  return (\r\n+    <Text>\r\n+      Olá mundo\r\n+    </Text>\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1636265543534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react';\r\n+import { StyleSheet, Text, View } from 'react-native';\r\n+\r\n+export default function Ever() {\r\n+  return (\r\n+    <Text>\r\n+      Olá mundo\r\n+    </Text>\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1636265585336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,28 +3,8 @@\n \r\n export default function Ever() {\r\n   return (\r\n     <Text>\r\n-      Olá mundo\r\n+      Olá mundo!\r\n     </Text>\r\n   );\r\n-}\n-import React from 'react';\r\n-import { StyleSheet, Text, View } from 'react-native';\r\n-\r\n-export default function ever() {\r\n-  return (\r\n-    <Text>\r\n-      Olá mundo\r\n-    </Text>\r\n-  );\r\n-}\n-import React from 'react';\r\n-import { StyleSheet, Text, View } from 'react-native';\r\n-\r\n-export default function App() {\r\n-  return (\r\n-    <Text>\r\n-      Olá mundo\r\n-    </Text>\r\n-  );\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1636265594626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,7 @@\n import { StyleSheet, Text, View } from 'react-native';\r\n \r\n export default function Ever() {\r\n   return (\r\n-    <Text>\r\n-      Olá mundo!\r\n-    </Text>\r\n+    <Text>Olá, mundo!</Text>\r\n   );\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1636266033941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import React from 'react';\r\n+import { StyleSheet, Text, View } from 'react-native';\r\n+\r\n+export default function Ever() {\r\n+  return (\r\n+    <Text>Everson React Native</Text>\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1636265487878,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { StyleSheet, Text, View } from 'react-native';\r\n\r\nexport default function App() {\r\n  return (\r\n    <Text>\r\n      Olá mundo\r\n    </Text>\r\n  );\r\n}"
+        }
+    ]
+}

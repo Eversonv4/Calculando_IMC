@@ -1,0 +1,22 @@
+{
+    "sourceFile": "App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1637003118146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637003129035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [altura, setAltura] = useState(0);\n   const [resultado, setResultado] = useState(0);\n \n   return (\n-    <SafeAreaView>\n+    <SafeAreaView style={{ marginTop: 20 }}>\n       <Text>Calculadora de IMC</Text>\n       <View>\n         <Text>Informe seu peso:</Text>\n         <TextInput\n"
+                }
+            ],
+            "date": 1637003118146,
+            "name": "Commit-0",
+            "content": "import React, { useState } from 'react';\nimport { StyleSheet, Text, View, SafeAreaView, TouchableHighlight, TextInput } from 'react-native';\n\nexport default function calc() {\n\n  const [peso, setPeso] = useState(0);\n  const [altura, setAltura] = useState(0);\n  const [resultado, setResultado] = useState(0);\n\n  return (\n    <SafeAreaView>\n      <Text>Calculadora de IMC</Text>\n      <View>\n        <Text>Informe seu peso:</Text>\n        <TextInput\n          autoFocus={true}\n          keyboardType={'numeric'}\n          onChangeText={text => setPeso(text)}\n        >\n        </TextInput>\n      </View>\n    </SafeAreaView>\n  );\n}\n\nconst styles = StyleSheet.create({\n\n});\n"
+        }
+    ]
+}
